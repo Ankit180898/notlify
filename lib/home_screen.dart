@@ -10,18 +10,18 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(20, 23, 24, 1),
+      backgroundColor: const Color.fromRGBO(20, 23, 24, 1),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: Text(
+        title: const Text(
           "Folders",
           style: TextStyle(
               color: Colors.white, fontSize: 32, fontWeight: FontWeight.bold),
         ),
         centerTitle: false,
         actions: [
-          Icon(
+          const Icon(
             Iconsax.calendar,
             color: Colors.white,
           ).paddingOnly(right: 16)
@@ -32,8 +32,8 @@ class HomeScreen extends StatelessWidget {
         width: MediaQuery.of(context).size.width * 0.20,
         child: FloatingActionButton(
           onPressed: () {},
-          backgroundColor: Color(0xffcc4f4f),
-          child: Icon(
+          backgroundColor: const Color(0xffcc4f4f),
+          child: const Icon(
             Iconsax.add,
             color: Colors.white,
           ),
@@ -50,10 +50,10 @@ class HomeScreen extends StatelessWidget {
                   height: MediaQuery.of(context).size.height * 0.20,
                   child: GestureDetector(
                     onTap: () {
-                      Get.to(NotesScreen());
+                      Get.to(const NotesScreen());
                     },
                     child: Card(
-                      color: Color.fromRGBO(28, 30, 31, 1),
+                      color: const Color.fromRGBO(28, 30, 31, 1),
                       elevation: 0,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(24)),
