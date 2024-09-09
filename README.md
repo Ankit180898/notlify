@@ -1,6 +1,6 @@
-# notlify
+# Notlify
 
-A new Flutter project.
+A good looking note taking app that is made using flutter and supabase
 
 ## Getting Started
 
